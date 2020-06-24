@@ -7,10 +7,12 @@
 </template>
 <script>
 // @ is an alias to /src
-
+import { mapGetters } from 'vuex'
 export default {
-  name: "Home",
+  name: 'Home',
   components: {},
-  computed: {},
-};
+  computed: {
+    ...mapGetters(['user']),
+  },
+}
 </script>
